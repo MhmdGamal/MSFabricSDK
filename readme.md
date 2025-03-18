@@ -9,6 +9,10 @@ We’ve built a Fabric Python SDK powered by the `Sempy` package, enabling seaml
 Before diving into the capabilities, let’s get it installed:
 if you prefer a pre-packaged `.whl` file, simply import it into your Python environment and start using it like a pro!
 
+you can use the .whl file and install the module using this command
+
+!pip install fabric_sdk-0.1.1-py3-none-any.whl
+
 📌 Key Features & How to Use Them
 1️⃣ Workspaces Management
 🔍 Get All Workspaces
@@ -16,7 +20,7 @@ Fetches a list of all Fabric workspaces along with their Git connection status.
 
 ```python
 
-from your_sdk_module import FabricAPIBase
+from fabric_sdk.api import FabricAPIBase
 fabric = FabricAPIBase()
 all_workspaces = fabric.GetAllWorkspaces( )
 print(all_workspaces)
